@@ -21,6 +21,9 @@ jobs:
         with:
           go-version: '1.22.0'  # 选择你使用的 Go 版本
 
+      - name: Initialize modules
+        run: go mod init IAM  # 替换为你的项目名称
+
       - name: Install dependencies
         run: go mod download
 
